@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="auth-section">
+    <div class="auth-container">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Masuk</button>
+    <p id="errorMsg" style="color: red; display: none;">Username(seharusnya Frazier) atau Password salah!</p>
+    <p><a href="#" onclick="showForgot()">Lupa Password?</a></p>
+  </div>
+</div>
+
+<!-- LUPA PASSWORD SCREEN (awal disembunyiin) -->
+<div id="forgotSection" style="display:none;">
+  <div class="auth-container">
+    <h2>Lupa Password</h2>
+    <input type="text" id="resetUsername" placeholder="Masukkan Username">
+    <button onclick="resetPassword()">Kirim</button>
+    <p><a href="#" onclick="backToLogin()">← Kembali ke Login</a></p>
+  </div>
+</div>
+
+<div></div>
+
+<script src="script.js"></script>
+</body>
